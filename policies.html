@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3b0764">
+  <title>Workshop Disclosures &amp; Policies | CEO Mode</title>
+  <meta name="description" content="Plain-language disclosures and policies for the CEO Mode free live workshop by Mekayla J Media.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,600;0,700;1,600&amp;family=DM+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --deep:#3b0764;
+      --bright:#6b21a8;
+      --gold:#d4af37;
+      --ink:#241b2e;
+      --muted:#6d6673;
+      --lavender:#f2eafd;
+      --white:#fff;
+      --line:rgba(59,7,100,.14);
+    }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      margin:0;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 88% 8%, rgba(212,175,55,.15), transparent 25%),
+        radial-gradient(circle at 8% 70%, rgba(107,33,168,.11), transparent 30%),
+        linear-gradient(145deg, #fff 0%, #fbf8ff 48%, var(--lavender) 100%);
+      font-family:"DM Sans", system-ui, sans-serif;
+      line-height:1.7;
+    }
+    a { color:inherit; }
+    .topbar {
+      padding:14px 20px;
+      color:var(--deep);
+      background:linear-gradient(100deg, #d4af37, #f5dc82 48%, #d4af37);
+      font-size:.75rem;
+      font-weight:800;
+      letter-spacing:.1em;
+      text-align:center;
+      text-transform:uppercase;
+    }
+    .wrap { width:min(calc(100% - 32px), 920px); margin-inline:auto; }
+    header { padding:64px 0 34px; }
+    .back {
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      color:var(--deep);
+      font-size:.78rem;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-decoration:none;
+      text-transform:uppercase;
+    }
+    .eyebrow {
+      margin:42px 0 10px;
+      color:var(--bright);
+      font-size:.75rem;
+      font-weight:900;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+    }
+    h1 {
+      max-width:780px;
+      margin:0;
+      font-family:"Bodoni Moda", serif;
+      font-size:clamp(2.7rem, 8vw, 5.8rem);
+      font-style:italic;
+      letter-spacing:-.055em;
+      line-height:.95;
+    }
+    .intro { max-width:740px; margin:24px 0 0; color:var(--muted); font-size:1.05rem; }
+    .updated { margin-top:18px; color:#887c8f; font-size:.78rem; }
+    .document-shell {
+      margin:6px 0 34px;
+      overflow:hidden;
+      background:rgba(255,255,255,.94);
+      border:1px solid var(--line);
+      border-radius:24px;
+      box-shadow:0 26px 80px rgba(59,7,100,.14);
+    }
+    .document-bar {
+      display:flex;
+      gap:16px;
+      align-items:center;
+      justify-content:space-between;
+      padding:18px 24px;
+      color:var(--white);
+      background:linear-gradient(105deg, var(--deep), var(--bright));
+      font-size:.72rem;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .print-button {
+      padding:8px 12px;
+      color:var(--deep);
+      background:var(--gold);
+      border:0;
+      border-radius:999px;
+      font:inherit;
+      cursor:pointer;
+    }
+    .document-scroll {
+      max-height:min(70vh, 720px);
+      overflow-y:auto;
+      padding:clamp(24px, 5vw, 52px);
+      scrollbar-color:var(--gold) #eee4f5;
+      scrollbar-width:thin;
+    }
+    .document-scroll::-webkit-scrollbar { width:10px; }
+    .document-scroll::-webkit-scrollbar-track { background:#eee4f5; }
+    .document-scroll::-webkit-scrollbar-thumb { background:var(--gold); border-radius:999px; }
+    .notice {
+      margin:0 0 28px;
+      padding:18px 20px;
+      color:#4f3b0b;
+      background:rgba(212,175,55,.14);
+      border:1px solid rgba(212,175,55,.45);
+      border-radius:16px;
+      font-size:.9rem;
+    }
+    .policy-list { display:block; }
+    article {
+      padding:26px 0;
+      background:transparent;
+      border:0;
+      border-bottom:1px solid var(--line);
+      border-radius:0;
+      box-shadow:none;
+    }
+    article:first-child { padding-top:4px; }
+    article:last-child { padding-bottom:4px; border-bottom:0; }
+    article h2 {
+      margin:0 0 12px;
+      color:var(--deep);
+      font-family:"Bodoni Moda", serif;
+      font-size:clamp(1.35rem, 4vw, 2rem);
+      line-height:1.15;
+    }
+    article p { margin:0; color:var(--muted); }
+    article p + p { margin-top:12px; }
+    article ul { margin:14px 0 0; padding-left:20px; color:var(--muted); }
+    .cta {
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      padding:0 0 80px;
+    }
+    .button {
+      display:inline-flex;
+      min-height:52px;
+      align-items:center;
+      justify-content:center;
+      padding:12px 22px;
+      color:var(--white);
+      background:linear-gradient(105deg, var(--bright), var(--deep));
+      border-radius:8px;
+      font-weight:800;
+      text-decoration:none;
+      text-transform:uppercase;
+    }
+    .button.gold { color:var(--ink); background:linear-gradient(105deg, #f7dc78, var(--gold)); }
+    footer { padding:28px 0; color:rgba(255,255,255,.68); background:var(--ink); font-size:.75rem; }
+    .footer-inner { display:flex; flex-wrap:wrap; gap:10px 20px; align-items:center; justify-content:space-between; }
+    footer a { color:var(--gold); font-weight:700; text-decoration:none; }
+    @media (max-width:600px) {
+      header { padding-top:42px; }
+      .document-bar { align-items:flex-start; flex-direction:column; }
+      .document-scroll { max-height:68vh; padding:24px 20px; }
+      .footer-inner { justify-content:center; text-align:center; }
+      .button { width:100%; }
+    }
+    @media print {
+      body { background:#fff; }
+      .topbar, .back, .document-bar, .cta, footer { display:none !important; }
+      header { padding:20px 0; }
+      .document-shell { margin:0; border:0; box-shadow:none; }
+      .document-scroll { max-height:none; overflow:visible; padding:0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">CEO Mode · Workshop Disclosures &amp; Policies</div>
+  <header class="wrap">
+    <a class="back" href="index.html" aria-label="Return to the CEO Mode workshop page">← Back to CEO Mode</a>
+    <p class="eyebrow">Clear, practical information</p>
+    <h1>Workshop Disclosures &amp; Policies</h1>
+    <p class="intro">CEO Mode is designed to inspire aspiring entrepreneurs to recognize what is already possible with their knowledge, skills, and everyday tools. This document explains the workshop's educational purpose, participant responsibility, and important limitations.</p>
+    <p class="updated">Last updated: October 9, 2026</p>
+  </header>
+
+  <main class="wrap">
+    <section class="document-shell" aria-label="Scrollable CEO Mode workshop policy document">
+      <div class="document-bar"><span>CEO Mode · Official Workshop Policy</span><button class="print-button" type="button" onclick="window.print()">Print / Save as PDF</button></div>
+      <div class="document-scroll" tabindex="0">
+        <div class="notice"><strong>Plain-language notice:</strong> This document provides general information, not legal, tax, accounting, investment, or financial advice. It is not a substitute for advice from a qualified professional who understands your situation and location.</div>
+
+        <div class="policy-list">
+      <article>
+        <h2>1. Educational and Inspirational Purpose</h2>
+        <p>CEO Mode is an educational workshop created to inspire excitement, hope, and purposeful action around entrepreneurship. It provides examples, frameworks, prompts, and practical ways to think about turning existing skills into a possible business direction. The workshop does not form a professional advisory, employment, partnership, agency, or fiduciary relationship.</p>
+      </article>
+
+      <article>
+        <h2>2. No Guaranteed Income or Business Results</h2>
+        <p>No specific income, profit, customer, follower, engagement, launch, or business result is promised or guaranteed. Starting and operating a business involves uncertainty and risk. Outcomes vary based on factors including your experience, decisions, offer, implementation, consistency, market, audience, timing, resources, and circumstances outside anyone's control.</p>
+      </article>
+
+      <article>
+        <h2>3. Case Studies, Metrics, and Examples</h2>
+        <p>Any views, reach, revenue, engagement, client, or account-growth examples shown on this website or during the workshop are past results from specific circumstances. They are provided to illustrate experience and strategy—not to state what every attendee should expect.</p>
+        <p>Mekayla J Media has not established a generally expected financial or business result for workshop attendees. Your results may be materially different, including no financial result.</p>
+      </article>
+
+      <article>
+        <h2>4. Practical Tools and Platforms</h2>
+        <p>The workshop may show practical ways to use familiar tools such as email and Instagram. Mentioning a platform does not mean the platform sponsors, endorses, or is affiliated with CEO Mode or Mekayla J Media. Platform features, pricing, policies, and availability can change.</p>
+      </article>
+
+      <article>
+        <h2>5. Your Implementation and Responsibility</h2>
+        <p>The workshop is intended to support your thinking—not replace it. You are responsible for deepening your own understanding, adapting any strategy to your audience, checking your assumptions, and deciding what is appropriate for your business.</p>
+        <ul>
+          <li>Research your market, customers, pricing, and competition.</li>
+          <li>Follow applicable business, advertising, tax, privacy, and licensing requirements.</li>
+          <li>Use your own judgment before spending money, making claims, or entering agreements.</li>
+          <li>Understand that implementation and consistency can improve your process but cannot guarantee an outcome.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h2>6. Advertising, Endorsements, and Affiliate Disclosures</h2>
+        <p>Mekayla J Media aims to present promotional statements honestly and without misleading guarantees. If content includes a paid endorsement, gifted product, affiliate relationship, sponsorship, or another material connection, that relationship should be disclosed clearly near the relevant recommendation. A general policy-page link does not replace a disclosure that is needed next to a specific claim or endorsement.</p>
+      </article>
+
+      <article>
+        <h2>7. Workshop Giveaway</h2>
+        <p>The workshop may include a promotional giveaway for five attendees. No purchase is necessary to enter. Entry timing, eligibility, selection method, and any additional conditions will be explained before entries are accepted. Odds depend on the number of eligible entries. A giveaway spot has no cash value and is not transferable unless Mekayla J Media states otherwise.</p>
+      </article>
+
+      <article>
+        <h2>8. Registration and Third-Party Services</h2>
+        <p>Workshop registration is processed through Stan Store, and the live session may be delivered through Zoom. Those services operate under their own terms and privacy practices. Mekayla J Media is not responsible for third-party outages, policy changes, or technical limitations.</p>
+      </article>
+
+      <article>
+        <h2>9. Accuracy and Updates</h2>
+        <p>Reasonable care is taken when preparing workshop materials, but information can become outdated or may not apply to every business. Mekayla J Media may update the workshop, examples, schedule, policies, or supporting materials when necessary.</p>
+      </article>
+
+      <article>
+        <h2>10. Questions</h2>
+        <p>For questions about CEO Mode or these policies, contact Mekayla J Media through <a href="https://instagram.com/mekaylaj.media" target="_blank" rel="noopener">@mekaylaj.media</a>.</p>
+      </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta">
+      <a class="button gold" href="https://stan.store/mekaylajmedia/p/ceomodeworkshop" target="_blank" rel="noopener">Save My Free Seat</a>
+      <a class="button" href="index.html">Return to Workshop Page</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© 2026 Mekayla J Media | All Rights Reserved</span>
+      <a href="https://instagram.com/mekaylaj.media" target="_blank" rel="noopener">@mekaylaj.media</a>
+    </div>
+  </footer>
+</body>
+</html>
